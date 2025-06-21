@@ -1,0 +1,54 @@
+nav{
+    
+background-color: black;
+padding: 10px;
+
+color: white
+
+}
+ul,li,h1{
+    display: inline;
+    
+}
+li{
+    padding: 5px;
+    color: gray;
+}
+ul{
+    padding-left: 60%;
+}
+li:hover{
+    color: white;
+    cursor: pointer;
+    
+}
+input{
+    width: 60%;
+    padding: 10px;
+   
+}
+.SearchBar{
+    margin: 30px;
+    text-align: center;
+}
+.box{
+   
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+    width: 196px;
+    display: inline-block;
+    
+}
+.Content{
+    text-align: center;
+}
+p:hover{
+    color: rgb(245, 10, 10);
+cursor: pointer;
+
+}
+
+.About{
+    text-align: center;
+}
