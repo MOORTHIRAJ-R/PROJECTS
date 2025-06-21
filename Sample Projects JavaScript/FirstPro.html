@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<head>
+
+    <link href="Firstpro.css" rel="stylesheet">
+    <title>Student Dashboard</title>
+
+</head>
+
+<body>
+    <script src="Firstproj.js"></script>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <div class="menu">
+            <a href="#" onclick="showSection('profile')">👤 Profile</a>
+            <a href="#" onclick="showSection('score')">📊 Score</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div id="profile" class="section active">
+            <h3>👤 Student Profile</h3>
+            <p><strong>Name:</strong> Raj</p>
+            <p><strong>Course:</strong> JavaScript Developer</p>
+            <p><strong>Email:</strong> raj@example.com</p>
+        </div>
+
+        <div id="score" class="section">
+            <h3>📊 Your Scores</h3>
+            <ul>
+                <li>HTML: 90</li>
+                <li>CSS: 85</li>
+                <li>JavaScript: 92</li>
+                <li>Projects: 95</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

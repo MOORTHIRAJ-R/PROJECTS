@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Guessing Game</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding: 50px;
+        }
+
+        input {
+            padding: 10px;
+            width: 60px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>🎲 Number Guessing Game</h2>
+    <p>Guess a number between 1 and 10</p>
+
+    <input type="number" id="guessInput" min="1" max="10">
+    <button onclick="checkGuess()">Guess</button>
+
+    <div id="message"></div>
+
+    <script>
+        const answer = Math.floor(Math.random() * 10) + 1;
+        let attempts = 0;
+
+        function checkGuess() {
+            const userGuess = parseInt(document.getElementById("guessInput").value);
+            attempts++;
+
+            if (userGuess === answer) {
+                document.getElementById("message").innerText =
+                    `🎉 Correct! You guessed it in ${attempts} attempts.`;
+            } else if (userGuess < answer) {
+                document.getElementById("message").innerText = "📉 Too low. Try again!";
+            } else if (userGuess > answer) {
+                document.getElementById("message").innerText = "📈 Too high. Try again!";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
